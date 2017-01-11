@@ -1,0 +1,12 @@
+[submodule "system/nerves_system_rpi3_ap"]
+	path = system/nerves_system_rpi3_ap
+	url = git@github.com:joelbyler/nerves_system_rpi3_ap.git
+[submodule "system/nerves_system_br"]
+	path = system/nerves_system_br
+	url = git@github.com:nerves-project/nerves_system_br.git
+[submodule "project/picmotron"]
+	path = project/picmotron
+	url = git@github.com:joelbyler/picmotron.git
+[submodule "nerves_system_rpi3"]
+	path = nerves_system_rpi3
+	url = https://github.com/nerves-project/nerves_system_rpi3.git

@@ -1,0 +1,11 @@
+# the main image, this is the application
+system:
+  build: "."
+  environment:
+    - NERVES_SYSTEM=/opt/build/
+    - NERVES_TARGET=rpi3
+  volumes:
+    - ./system:/system
+    - ./scripts:/scripts
+    - ./project:/project
+    - ./out:/out
