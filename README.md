@@ -42,3 +42,6 @@ OR
 docker ps -qa | xargs docker stop | xargs docker rm
 docker images -qa | xargs docker rmi -f
 ```
+
+
+alias docker-gc='docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v /etc:/etc spotify/docker-gc && docker volume rm $(docker volume ls --filter dangling=true -q | egrep \'\\w{64}\')'
